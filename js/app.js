@@ -43,7 +43,15 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
     const selectedPlayers = document.querySelector('#selected-players');
 
     const totalPlayerExpense = playerBudget * selectedPlayers.children.length;
-    setTextElementvalueById('player-expenses', totalPlayerExpense);
+
+    // validation
+    if (playerBudget >= 0) {
+        setTextElementvalueById('player-expenses', totalPlayerExpense);
+    }
+    else {
+        alert('Must enter positive value');
+        return;
+    }
 })
 
 
@@ -54,6 +62,14 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
     const coachCosting = getInputFieldValueById('coach-cost');
 
     const totalExpense = playerExpense + managerCosting + coachCosting;
-    setTextElementvalueById('total-expense', totalExpense);
+
+    // Validation
+    if (managerCosting >= 0 && coachCosting >= 0) {
+        setTextElementvalueById('total-expense', totalExpense);
+    }
+    else {
+        alert('Must enter positive value');
+        return;
+    }
 })
 

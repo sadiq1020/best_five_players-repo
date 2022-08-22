@@ -1,0 +1,10 @@
+.positon-image-back {
+    position: relative;
+    top: -160px;
+    left: 20px;
+}
+
+.positon-image-player {
+    position: relative;
+    top: -440px;
+}
