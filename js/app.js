@@ -25,8 +25,9 @@
 //         // }
 //     })
 // }
+
 const playersArray = [];
-console.log(playersArray);
+// console.log(playersArray.length);
 
 function addToPlayerList(element) {
     // console.log(element.parentNode.parentNode.children[0].innerText);
@@ -37,9 +38,34 @@ function addToPlayerList(element) {
     li.innerText = playerName;
     selectedPlayerField.appendChild(li);
     playersArray.push(li.innerText);
-    // return playerName;
+    // console.log(playersArray.length);
+    // const numberOfPlayers = playersArray.length;
+    // return numberOfPlayers;
 }
 
+function getInputFieldValueById(inputFieldId) {
+    const inputField = document.getElementById(inputFieldId);
+    const inputFieldString = inputField.value;
+    const inputFieldValue = parseFloat(inputFieldString);
+    return inputFieldValue;
+}
+
+function setTextElementvalueById(elementId, newValue) {
+    const textElement = document.getElementById(elementId);
+    textElement.innerText = newValue;
+}
+
+document.getElementById('btn-calculate').addEventListener('click', function () {
+    const playerBudget = getInputFieldValueById('player-budget-field')
+    const totalPlayerExpense = playerBudget * playersArray.length;
+    // console.log(totalPlayerExpense);
+    setTextElementvalueById('player-expenses', totalPlayerExpense);
+})
+
+document.getElementById('btn-calculate-total').addEventListener('click', function () {
+    const managerCosting = getInputFieldValueById('');
+    const coachCosting = getInputFieldValueById('');
+})
 
 
 
