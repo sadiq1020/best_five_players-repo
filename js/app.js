@@ -38,9 +38,6 @@ function addToPlayerList(element) {
     li.innerText = playerName;
     selectedPlayerField.appendChild(li);
     playersArray.push(li.innerText);
-    // console.log(playersArray.length);
-    // const numberOfPlayers = playersArray.length;
-    // return numberOfPlayers;
 }
 
 function getInputFieldValueById(inputFieldId) {
@@ -63,8 +60,12 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
 })
 
 document.getElementById('btn-calculate-total').addEventListener('click', function () {
-    const managerCosting = getInputFieldValueById('');
-    const coachCosting = getInputFieldValueById('');
+    const playerExpense = parseFloat(document.getElementById('player-expenses').innerText);
+    const managerCosting = getInputFieldValueById('manager-cost');
+    const coachCosting = getInputFieldValueById('coach-cost');
+
+    const totalExpense = playerExpense + managerCosting + coachCosting;
+    setTextElementvalueById('total-expense', totalExpense);
 })
 
 
