@@ -21,33 +21,36 @@
     </header>
     <section class="mt-5">
         <div class="grid grid-cols-4 gap-3 mx-5">
+            <!-- Lionel Messi -->
             <div class="card w-80 bg-black shadow-xl">
                 <figure><img class="w-80" src="./pic/leo-messi.png" alt="" /></figure>
                 <div class="card-body">
-                    <h2 class="card-title player-name">Lionel Messi</h2>
+                    <h2 class="card-title">Lionel Messi</h2>
                     <p>46 Goals & 110 Assists</p>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary btn-player">Select</button>
+                        <button onclick="addToPlayerList(this)" class="btn btn-primary">Select</button>
                     </div>
                 </div>
             </div>
+            <!-- Neymar Jr -->
             <div class="card w-80 bg-black shadow-xl">
                 <figure><img class="w-80" src="./pic/neymar.png" alt="" /></figure>
                 <div class="card-body">
-                    <h2 class="card-title player-name">Neymar Jr</h2>
+                    <h2 class="card-title">Neymar Jr</h2>
                     <p>42 Goals & 98 Assists</p>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary btn-player">Select</button>
+                        <button onclick="addToPlayerList(this)" class="btn btn-primary">Select</button>
                     </div>
                 </div>
             </div>
+            <!-- Kylian Mbappé -->
             <div class="card w-80 bg-black shadow-xl">
                 <figure><img class="w-80" src="./pic/mbappe.png" alt="" /></figure>
                 <div class="card-body">
-                    <h2 class="card-title player-name">Kylian Mbappé</h2>
+                    <h2 class="card-title">Kylian Mbappé</h2>
                     <p>33 Goals & 65 Assists</p>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary btn-player">Select</button>
+                        <button onclick="addToPlayerList(this)" class="btn btn-primary">Select</button>
                     </div>
                 </div>
             </div>
@@ -55,40 +58,46 @@
             <div class="card w-96 bg-black shadow-xl">
                 <!-- <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure> -->
                 <div class="card-body">
-                    <h2 class="card-title text-2xl">Sectected FIVE Players</h2>
+                    <h2 class="card-title text-2xl">Sectected Players Name:</h2>
 
-                    <div id="selected-players" class="card-actions justify-end">
+                    <div class="card-actions">
+                        <ol id="selected-players" class="list-decimal list-inside text-xl">
+
+                        </ol>
                         <!-- <button class="btn btn-primary">Buy Now</button> -->
                     </div>
                 </div>
             </div>
+            <!-- Vítor Machado -->
             <div class="card w-80 bg-black shadow-xl">
                 <figure><img class="w-80" src="./pic/machado.png" alt="" /></figure>
                 <div class="card-body">
-                    <h2 class="card-title player-name">Vítor Machado</h2>
+                    <h2 class="card-title">Vítor Machado</h2>
                     <p>18 Goals & 72 Assists</p>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary btn-player">Select</button>
+                        <button onclick="addToPlayerList(this)" class="btn btn-primary">Select</button>
                     </div>
                 </div>
             </div>
+            <!-- Sergio Ramos -->
             <div class="card w-80 bg-black shadow-xl">
                 <figure><img class="w-80" src="./pic/ramos.png" alt="" /></figure>
                 <div class="card-body">
-                    <h2 class="card-title player-name">Sergio Ramos </h2>
+                    <h2 class="card-title">Sergio Ramos</h2>
                     <p>21 Goals & 31 Assists</p>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary btn-player">Select</button>
+                        <button onclick="addToPlayerList(this)" class="btn btn-primary">Select</button>
                     </div>
                 </div>
             </div>
+            <!-- Renato Sanches -->
             <div class="card w-80 bg-black shadow-xl">
                 <figure><img class="w-80" src="./pic/renato.png" alt="" /></figure>
                 <div class="card-body">
-                    <h2 class="card-title player-name">Renato Sanches</h2>
+                    <h2 class="card-title">Renato Sanches</h2>
                     <p>17 Goals & 37 Assists</p>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary btn-player">Select</button>
+                        <button onclick="addToPlayerList(this)" class="btn btn-primary">Select</button>
                     </div>
                 </div>
             </div>
